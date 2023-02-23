@@ -47,7 +47,7 @@ Keamanan yang ada pada DevOps dapat menentukan dan melacak kegiatan pada skala y
  
 #### 4.	Tahapan-Tahapan Siklus DevOps
 
-![DevOps Siklus]{/downloads/SiklusDevOps.png}
+![DevOps Siklus](https://th.bing.com/th/id/R.5b353a639c066e831116b59aecad17c7?rik=edB84M61H9UURw&riu=http%3a%2f%2fblogs.vmware.com%2fmanagement%2ffiles%2f2020%2f08%2fScreen-Shot-2020-08-27-at-1.31.56-PM.png&ehk=bWVZxwy8MP4%2bvbbymh3TKnDZaHvMgFXQ5pFaNl4DYnA%3d&risl=&pid=ImgRaw&r=0)
 
 Siklus DevOps mencakup serangkaian kombinasi yang secarra umum dikenal sebagai “DevOps Lifecycle”. Tahapan-tahapannya yaitu sebagai berikut:
 
