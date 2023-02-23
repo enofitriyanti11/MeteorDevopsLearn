@@ -53,18 +53,19 @@ sebelum menjalankan project, pastikan laptop sudah menginstal composer dan php. 
   4. end
 
 **perintah dasar golang**
-    1. go run ==> untuk menjalankan program go yang sudah ditulis
-        ex: go run nama_file.go
-    2. go build ==> untuk memformat code go agar sesuai dengan konvensi yang ditetapkan oleh Go
-        ex: go build nama_file.go
-    3. go fmt ==> untuk memformat code Go agar sesuai dengan konvensi yang ditetapkan oleh Go
-        ex: go fmt nama_file.go
-    4. go get ==> untuk mengunduh dan menginstall paket Go dari repository
-        ex: go get nama_paket
-    5. go test ==> untuk menjalankan unit test pada program Go
-        ex: go test nama_file_test.go
-    6. go mod ==> untuk mengelola dependensi pada program Go
-        ex: go mod init nama_modul
-    
-    
+
+1. go run ==> untuk menjalankan program go yang sudah ditulis
+ex: go run nama_file.go
+2. go build ==> untuk memformat code go agar sesuai dengan konvensi yang ditetapkan oleh Go
+ex: go build nama_file.go
+3. go fmt ==> untuk memformat code Go agar sesuai dengan konvensi yang ditetapkan oleh Go
+ex: go fmt nama_file.go
+4. go get ==> untuk mengunduh dan menginstall paket Go dari repository
+ex: go get nama_paket
+5. go test ==> untuk menjalankan unit test pada program Go
+ex: go test nama_file_test.go
+6. go mod ==> untuk mengelola dependensi pada program Go
+ex: go mod init nama_modul
+
+
 ### 5. Java
