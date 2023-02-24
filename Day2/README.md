@@ -22,7 +22,7 @@ Kita butuh NVM saat kita membutuhkan Nodejs versi tertentu.
 
 composer adalah tools dependency manager untuk project php yang berfungsi sebagai penghubung antara project PHP dengan library dari luar yaitu dengan mengunduh libarary dari packagist.org
 
-![install](https://drive.google.com/file/d/1cfp59m5WI9Dvc0PNZEc_yohK7VZzVzDD/view?usp=sharing)
+![install](https://user-images.githubusercontent.com/82355684/221145062-e543424f-66ca-4f72-8632-82fb5c8abe70.png)
 
 # Cara menjalankan project berbagai bahasa pemrograman
 
@@ -34,7 +34,7 @@ sebelum menjalankan project react pastikan di lokal sudah terinstal nodejs dan n
   1. buka project reactjs dan masuk ke terminal
   2. jalankan perintah *npm install* untuk menginstal package managernya
   3. jalankan perintah *npm start* untuk running project
-![reactjs](https://drive.google.com/file/d/1C6P61L--X6KLWf1HWmWqAR-wvNVtToMM/view?usp=sharing)
+  ![run reactjs](https://user-images.githubusercontent.com/82355684/221145809-17fec268-bbc1-4414-a225-9f8a93a4e4a9.png)
 
 ### 2. Laravel
 
@@ -44,21 +44,25 @@ sebelum menjalankan project, pastikan laptop sudah menginstal composer dan php. 
   1. jalankan perintah *cp .en.example .env* untuk mengcopy file .env sementara untuk membuat database baru di lokal.
   2. jalankan perintah *composer install* untuk menginstal package manager composer pada project.
   3. jalankan perintah *php artisan key:generate*
-  ![key generate](https://drive.google.com/file/d/1_gTykpwTMLP6uQka2q_NiKZROiWPziNu/view?usp=sharing)
+  
+  ![run laravel1](https://user-images.githubusercontent.com/82355684/221145514-ef43b415-1c71-42ea-a84d-9e374333c51b.png)
 
   4. kemudian buat database baru di phpmyadmin dengan mneyesuaikan yang ada di file .env pada project. Untuk **DB_HOST=127.0.0.1 , DB_USERNAME=root , DB_PASSWORD={kosongkan} *untuk DB_USERNAME dan DB_PASWWOR itu sesuai dnegan yg ada di lokal* .**
 
   **.env sebelum dirubah**
-  ![sebelum .env](https://drive.google.com/file/d/1dCOjzQpIRt83bse6Ftr9E5Jhh-d5ddX7/view?usp=sharing)
+  
+  ![run laravel2](https://user-images.githubusercontent.com/82355684/221145540-4e0085f8-86c8-4402-8daf-2c1d7efb6d27.png)
+ 
 
   **.env sesudah dirubah**
-  ![sesudah .env](https://drive.google.com/file/d/16GorADM7g_YWg4ErKl_6wVythqC7NF7p/view?usp=sharing)
+  
+  ![run laravel3](https://user-images.githubusercontent.com/82355684/221145568-07296297-1557-4d17-87c8-796dbc61bd53.png)
 
   5. jalankan perintah *php artisan config:cache*
   6. jalankan perintah *php artisan migrate*
   7. jalankan perintah *php artisan serve* maka project akan diarahkan ke server
-    ![akhir syntax](https://drive.google.com/file/d/10kfSe0Bd5k_1QXcArR95F3KejM3sZ72N/view?usp=sharing)
-
+  
+  ![run laravel4](https://user-images.githubusercontent.com/82355684/221145615-d972ef6b-9a2c-426e-b157-0343131ee618.png)
 
 ### 3. Nodejs
 
@@ -68,6 +72,8 @@ yang diperlukan sebelum running project nodejs adalah environment nodejs, npm/ya
 1. npm install
 2. npm start
 3. node [nama_apps].js
+
+![run nodejs2](https://user-images.githubusercontent.com/82355684/221148539-60767561-f082-4362-8c20-a4875c891230.png)
 
 ### 4. Golang
 
