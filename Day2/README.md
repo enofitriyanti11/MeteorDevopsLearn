@@ -1,4 +1,4 @@
-## Apa itu Nodejs, NPM, NVM, Composer
+# Apa itu Nodejs, NPM, NVM, Composer
 
 ### 1. Nodejs
 
@@ -9,12 +9,18 @@ Node.js juga menyediakan banyak library/module JavaScript yang membantu menyeder
 
 NPM adalah mengelola package Javascript untuk menginstal modul, berbagi dependensi, dan berbagi tool. Dengan jumlah package yang banyak tersebut, seorang developer dapat terbantu terutama dalam soal waktu pembuatan aplikasi. 
 
+### 3. YARN (Yet Another Resource Negosiator)
 
+Kegunaannya sama dengan npm yaitu sebagia alternatif package manager selain npm untuk Nodejs. Tujuan awal dikembangkannya Yarn adalah untuk mengatasi masalah yang ada pada npm. Seiring perkembangannya, fitur yang dimiliki kedua package manager ini semakin serupa, namun Yarn tetap menjadi pilihan beberapa pengguna JavaScript
 
+### 3. NVM (Node Version Manager)
 
+NVM adalah sebuah program yang akan membantu kita menggunakan lebih dari satu versi Nodejs di dalam satu komputer. NVM lebih mudah digunakan karena selain untuk menentukan versi Nodejs yang akan digunakan, NVM juga akan membantu kita menginstalnya dan tentunya terupdate dengan versi resmi yang dari website Nodejs.
+Kita butuh NVM saat kita membutuhkan Nodejs versi tertentu.
 
+![install](https://drive.google.com/file/d/1cfp59m5WI9Dvc0PNZEc_yohK7VZzVzDD/view?usp=sharing)
 
-## Cara menjalankan project berbagai bahasa pemrograman
+# Cara menjalankan project berbagai bahasa pemrograman
 
 ### 1. Reactjs
 
@@ -25,23 +31,39 @@ sebelum menjalankan project react pastikan di lokal sudah terinstal nodejs dan n
   2. jalankan perintah *npm install* untuk menginstal package managernya
   3. jalankan perintah *npm start* untuk running project
 
+![reactjs](https://drive.google.com/file/d/1C6P61L--X6KLWf1HWmWqAR-wvNVtToMM/view?usp=sharing)
 
 ### 2. Laravel
 
 sebelum menjalankan project, pastikan laptop sudah menginstal composer dan php. kemudian dibutuhkan database, bisa menggunakan phpmyadmin.
 
 **cara running project laravel**
-  1. jalankan perintah *cp .en.example .env* untuk mengcopy file .env sementara untuk membuat databassse baru di lokal.
-  2. jalankan perintah *composer install* untuk menginstal package manager composer.
+  1. jalankan perintah *cp .en.example .env* untuk mengcopy file .env sementara untuk membuat database baru di lokal.
+  2. jalankan perintah *composer install* untuk menginstal package manager composer pada project.
   3. jalankan perintah *php artisan key:generate*
+
+  ![key generate](https://drive.google.com/file/d/1_gTykpwTMLP6uQka2q_NiKZROiWPziNu/view?usp=sharing)
+
   4. kemudian buat database baru di phpmyadmin dengan mneyesuaikan yang ada di file .env pada project. Untuk **DB_HOST=127.0.0.1 , DB_USERNAME=root , DB_PASSWORD={kosongkan} *untuk DB_USERNAME dan DB_PASWWOR itu sesuai dnegan yg ada di lokal* .**
+
+  **.env sebelum dirubah**
+  ![sebelum .env](https://drive.google.com/file/d/1dCOjzQpIRt83bse6Ftr9E5Jhh-d5ddX7/view?usp=sharing)
+
+  **.env sesudah dirubah**
+  ![sesudah .env](https://drive.google.com/file/d/16GorADM7g_YWg4ErKl_6wVythqC7NF7p/view?usp=sharing)
+
   5. jalankan perintah *php artisan config:cache*
   6. jalankan perintah *php artisan migrate*
   7. jalankan perintah *php artisan serve* maka project akan diarahkan ke server
-
+    ![akhir syntax](https://drive.google.com/file/d/10kfSe0Bd5k_1QXcArR95F3KejM3sZ72N/view?usp=sharing)
 
 
 ### 3. Nodejs
+
+yang diperlukan sebelum running project nodejs adalah environment nodejs, npm/yarn, dan nvm untuk mengganti versi dari nodejs yang ada pada aplikasi yang akan di running.
+
+
+
 
 
 ### 4. Golang
@@ -69,3 +91,71 @@ ex: go mod init nama_modul
 
 
 ### 5. Java
+
+
+
+
+
+# Apa itu GIT, dan GITHUB
+
+Git adalah sebuah software yang digunakan untuk mencatat perubahan seluruh file atau repository yang ada pada sebuah project
+Istilah commit pada git berfungsi untuk menyimpan riwayat perubahan data pada file. Melalui commit developer dapat kembali ke source code sebelumnya.
+
+GitHub merupakan layanan cloud yang berguna untuk menyimpan dan mengelola sebuah project yang dinamakan repository (repo git). Cara kerja pada GitHub harus terkoneksi pada internet sehingga tidak perlu meng-install sebuah software ke dalam perangkat keras. Hal ini memberikan keringanan penyimpanan komputer yang kita gunakan karena file project tersimpan oleh cloud GitHub.
+
+conclusion:
+Git merupakan alat version control.
+GitHub merupakan alat version control sekaligus penyimpanan cloud.
+Kedua platform ini pada konsep kerjanya hampir sama dengan Dropbox dan Google Drive, hanya saja Git dan GitHub bekerja untuk mengolah kode script. Sedangkan DropBox dan Google Drive bertugas untuk mengolah kata.
+
+Prosedur yang diterapkan pada git ini dapat membantu antar divisi project untuk memantau dan menghubungkan (merge) antar ekstensi yang berbeda dengan mudah. Sehingga aplikasi yang dibuat oleh sebuah tim project dapat berfungsi tanpa menghubungkan secara manual.
+
+## perintah pada git
+
+sebelum mengenal git lebih jauh ada perintah yang fungsinya berbeda yaitu git remote dan git clone. perbedaannya adalah Git Remote digunakan untuk mengelola koneksi antara repositori lokal dan jarak jauh, sedangkan Git Clone digunakan untuk menyalin seluruh riwayat perubahan dari repositori jarak jauh ke repositori lokal.
+
+#### menambahkan folder lokal ke repository github
+1. buat folder baru dan isi dengan file. folder kosong tidak bisa di push jika tidak ada file.
+2. jalankan perintah
+  * ```git init```
+  * ```git add .```
+  * ```git commit -m "add komentar"```
+  * ```git branch -M main```
+  * buat repository baru di github dan salin link url repo tsb
+  * ```git remote add [namabranch] [url https repo]```
+  * ```git push -u origin main```
+
+#### mengambil repository github ke lokal
+1. buat folder di lokal
+2. masuk ke folder tsb
+3. lakukan ```git init```
+4. lakukan git remote ex: git remote add [nama branch] [url repo] ==> ```git remote add master https://github.com/rizkipa0904/nayacake.git```
+5. lakukan git pull ex: git pull [URL repo] ==> ```git pull https://github.com/rizkipa0904/nayacake.git```
+
+**git clone digunakan untuk mengupdate apa yang telah di update d repository akan terupdate juga di lokal**
+```git clone https://github.com/nama-akun/repo.git```
+
+#### cara menghubungkan git lokal dengan github
+1. masuk ke direktori yang diinginkan di CMD
+2. ```git clone [urlrepo]```
+3. ```git pull [nama remote] [namabranch]``` untuk mengambil file dari github ke lokal
+4. ```git push [nama remote] [namabranch]``` untuk mengupload kode yang ada di lokal ke github
+sebelum di push, ```git add .``` dan ```git commit -m "add komentar"```
+
+#### cara mengganti branch baru
+1. buat branch baru ```git branch [namabranchbaru]```
+2. masuk ke branch baru ```git checkout [namabranchbaru]```
+
+#### untuk membatalkan perintah di git
+1. ```git log --oneline``` untuk melihat list commit yang sudah di rubah
+2. ```git revert [kodeperubahan]``` 
+
+#### git ssh
+SSH memudahkan user untuk mengelola server tanpa harus datang ke lokasi fisik server. Tidak hanya server saja, user dapat memanfaatkan SSH untuk mengatur dan mengelola komputer maupun perangkat desktop yang ada di jaringan yang sama tanpa harus menyentuh perangkat tersebut.
+SSH memungkinkan user lain dapat mengakses repo yang ada di github jika bersifat private dan telah mendapat izin dari pemilik repo tsb.
+
+**cara mengoneksikan ssh di lokal**
+1. masuk ke folder baru
+2. ```git init```
+3. ```git pull git@github.com:enofitriyanti11/MeteorDevopsLearn.git```
+
