@@ -18,6 +18,9 @@ Kegunaannya sama dengan npm yaitu sebagia alternatif package manager selain npm 
 NVM adalah sebuah program yang akan membantu kita menggunakan lebih dari satu versi Nodejs di dalam satu komputer. NVM lebih mudah digunakan karena selain untuk menentukan versi Nodejs yang akan digunakan, NVM juga akan membantu kita menginstalnya dan tentunya terupdate dengan versi resmi yang dari website Nodejs.
 Kita butuh NVM saat kita membutuhkan Nodejs versi tertentu.
 
+<img align="left" width="400" height="350" 
+src="https://drive.google.com/file/d/1cfp59m5WI9Dvc0PNZEc_yohK7VZzVzDD/view?usp=sharing">
+
 ![install](https://drive.google.com/file/d/1cfp59m5WI9Dvc0PNZEc_yohK7VZzVzDD/view?usp=sharing)
 
 # Cara menjalankan project berbagai bahasa pemrograman
@@ -31,6 +34,9 @@ sebelum menjalankan project react pastikan di lokal sudah terinstal nodejs dan n
   2. jalankan perintah *npm install* untuk menginstal package managernya
   3. jalankan perintah *npm start* untuk running project
 
+<img align="left" width="400" height="350" 
+src="https://drive.google.com/file/d/1C6P61L--X6KLWf1HWmWqAR-wvNVtToMM/view?usp=sharing">
+
 ![reactjs](https://drive.google.com/file/d/1C6P61L--X6KLWf1HWmWqAR-wvNVtToMM/view?usp=sharing)
 
 ### 2. Laravel
@@ -42,19 +48,27 @@ sebelum menjalankan project, pastikan laptop sudah menginstal composer dan php. 
   2. jalankan perintah *composer install* untuk menginstal package manager composer pada project.
   3. jalankan perintah *php artisan key:generate*
 
+<img align="left" width="400" height="350" 
+src="https://drive.google.com/file/d/1_gTykpwTMLP6uQka2q_NiKZROiWPziNu/view?usp=sharing>
   ![key generate](https://drive.google.com/file/d/1_gTykpwTMLP6uQka2q_NiKZROiWPziNu/view?usp=sharing)
 
   4. kemudian buat database baru di phpmyadmin dengan mneyesuaikan yang ada di file .env pada project. Untuk **DB_HOST=127.0.0.1 , DB_USERNAME=root , DB_PASSWORD={kosongkan} *untuk DB_USERNAME dan DB_PASWWOR itu sesuai dnegan yg ada di lokal* .**
 
   **.env sebelum dirubah**
+<img align="left" width="400" height="350" 
+src="https://drive.google.com/file/d/1dCOjzQpIRt83bse6Ftr9E5Jhh-d5ddX7/view?usp=sharing>
   ![sebelum .env](https://drive.google.com/file/d/1dCOjzQpIRt83bse6Ftr9E5Jhh-d5ddX7/view?usp=sharing)
 
   **.env sesudah dirubah**
+<img align="left" width="400" height="350" 
+src="https://drive.google.com/file/d/16GorADM7g_YWg4ErKl_6wVythqC7NF7p/view?usp=sharing">
   ![sesudah .env](https://drive.google.com/file/d/16GorADM7g_YWg4ErKl_6wVythqC7NF7p/view?usp=sharing)
 
   5. jalankan perintah *php artisan config:cache*
   6. jalankan perintah *php artisan migrate*
   7. jalankan perintah *php artisan serve* maka project akan diarahkan ke server
+<img align="left" width="400" height="350" 
+src="https://drive.google.com/file/d/10kfSe0Bd5k_1QXcArR95F3KejM3sZ72N/view?usp=sharing">
     ![akhir syntax](https://drive.google.com/file/d/10kfSe0Bd5k_1QXcArR95F3KejM3sZ72N/view?usp=sharing)
 
 
