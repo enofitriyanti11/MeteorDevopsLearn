@@ -62,9 +62,10 @@ sebelum menjalankan project, pastikan laptop sudah menginstal composer dan php. 
 
 yang diperlukan sebelum running project nodejs adalah environment nodejs, npm/yarn, dan nvm untuk mengganti versi dari nodejs yang ada pada aplikasi yang akan di running.
 
-
-
-
+**cara menjalankan project nodejs**
+1. npm install
+2. npm start
+3. node [nama_apps].js
 
 ### 4. Golang
 
@@ -88,12 +89,6 @@ ex: go get nama_paket
 ex: go test nama_file_test.go
 6. go mod ==> untuk mengelola dependensi pada program Go
 ex: go mod init nama_modul
-
-
-### 5. Java
-
-
-
 
 
 # Apa itu GIT, dan GITHUB
