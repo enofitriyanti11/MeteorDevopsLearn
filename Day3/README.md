@@ -56,10 +56,16 @@ JED merupakan teks editor berbasis teks lintas platform. Website resmi: http://w
 
 ![Jed](https://user-images.githubusercontent.com/82355684/221521655-bcf8297e-d863-44e3-9b6c-40e0ec53dce1.png)
 
+7. Gedit
+
+
 
 
 
 ## 3. Text Manipulation di Linux
+
+1. awk
+
 
 
 
@@ -68,7 +74,7 @@ JED merupakan teks editor berbasis teks lintas platform. Website resmi: http://w
 1. ```pwd``` untuk mengetahui directory mana yang sedang dibuka
 2. ```ls``` untuk mengetahui file apa saja yang ada di dalam directory
 3. ```cd namafolder``` untuk masuk ke sebuah directory ```cd ..``` untuk keluar dari directory
-4. ```cat namafile.txt``` untuk membaca isi file
+4. ```cat namafile.txt``` untuk membaca isi file ```cat > namafile.txt``` untuk menambahkan isi file ```cat >> namafile.txt``` untuk menambahkan isi file ke file yang sudah ada
 5. ```mkdir namafolder``` untuk membuat folder baru
 6. ```touch namafile.txt``` untuk membuat file baru
 7. ```mv namafilelama.txt namafilebaru.txt``` untuk mengganti nama file lama ke baru 
@@ -79,6 +85,5 @@ JED merupakan teks editor berbasis teks lintas platform. Website resmi: http://w
 12. ```tail -n 2 namafile.txt``` untuk menampilkan beberapa baris terakhir saja.
 13. ```diff namafile1.txt namafile2.txt``` untuk membandingkan isi dua file berdasarkan baris demi baris  
 14. ```uname -a``` untuk melihat informasi linux yang sedang running
-15. 
-
-
+15. ```grep kataygdicari namafile.txt``` untuk mencari kata dalam file yang diinginkan
+16. ```sudo apt install gedit``` untuk menginstall text editor gedit
