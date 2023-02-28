@@ -79,8 +79,10 @@ ex:
 
 3. sort
 
-digunakan untuk menampilkan konten dalam format yang terurut
+digunakan untuk menampilkan konten dalam format yang terurut. perintah ```sort``` untuk secara ascending, dan perintah ```sort -r``` secara descending.
+
 ex:
+
 ![sort1](https://user-images.githubusercontent.com/82355684/221816531-a77ea4ea-4ce9-44c2-a28b-88249400204b.png)
 
 ![sort2](https://user-images.githubusercontent.com/82355684/221817942-134c3c4b-46fc-4470-b999-5fcfcb85888a.png)
