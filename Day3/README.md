@@ -56,15 +56,39 @@ JED merupakan teks editor berbasis teks lintas platform. Website resmi: http://w
 
 ![Jed](https://user-images.githubusercontent.com/82355684/221521655-bcf8297e-d863-44e3-9b6c-40e0ec53dce1.png)
 
-7. Gedit
-
-
-
-
 
 ## 3. Text Manipulation di Linux
 
 1. awk
+
+digunakan untuk pemindaian baris dami baris dan membandingkan baris dengan pola.
+ex:
+awk '{print $1}' namafile.txt
+
+![awk](https://user-images.githubusercontent.com/82355684/221814421-cc2ddc2e-64bc-4df4-8216-5c115a5afa21.png)
+
+
+2. grep
+
+digunakan untuk mencari kata dalam file.
+ex:
+```grep -i kataygdicari namafile.txt``` untuk mencari kata tanpa memerhatikan besar kecilnya huruf. 
+```grep -l kataygdicari ./*``` untuk mencari sebuah kata di kumpulan file.
+
+![grep](https://user-images.githubusercontent.com/82355684/221815299-37291bd2-7e4f-467c-af31-e3ec23881a9e.png)
+
+3. sort
+
+digunakan untuk menampilkan konten dalam format yang terurut
+ex:
+![sort1](https://user-images.githubusercontent.com/82355684/221816531-a77ea4ea-4ce9-44c2-a28b-88249400204b.png)
+
+![sort2](https://user-images.githubusercontent.com/82355684/221817942-134c3c4b-46fc-4470-b999-5fcfcb85888a.png)
+
+4. sed
+
+digunakan untuk 
+
 
 
 
@@ -85,5 +109,7 @@ JED merupakan teks editor berbasis teks lintas platform. Website resmi: http://w
 12. ```tail -n 2 namafile.txt``` untuk menampilkan beberapa baris terakhir saja.
 13. ```diff namafile1.txt namafile2.txt``` untuk membandingkan isi dua file berdasarkan baris demi baris  
 14. ```uname -a``` untuk melihat informasi linux yang sedang running
-15. ```grep kataygdicari namafile.txt``` untuk mencari kata dalam file yang diinginkan
+15. ```grep kataygdicari namafile.txt``` untuk mencari kata dalam file yang diinginkan 
 16. ```sudo apt install gedit``` untuk menginstall text editor gedit
+
+![commandline](https://user-images.githubusercontent.com/82355684/221823256-74c93a5a-bb30-4d87-8ede-db89a6a4b795.png)
