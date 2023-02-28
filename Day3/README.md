@@ -87,9 +87,22 @@ ex:
 
 4. sed
 
-digunakan untuk 
+digunakan untuk mengganti teks menjadi tampilan kata yang ditentukan. misalnya kata **two** pada baris ke empat pada file diganti menjadi **2** maka digunakan ```sed -n '4 s/two/2/p' namafile.txt```
+
+ex:
+![sed](https://user-images.githubusercontent.com/82355684/221827043-b3a2867e-31ca-4403-afe9-48767865b48b.png)
+
+ex: penggantian kata secara global gunakan fleg **-g**
+![sed2](https://user-images.githubusercontent.com/82355684/221828301-6ade42d1-351c-49ad-8cc6-99b4d1da19d2.png)
 
 
+5. cut
+
+digunakan untuk memotong ata mengekstrak bagian teks dari baris atau file.
+```cut -b 1 filebaru.txt``` untuk menampilkan huruf pertama dari kata awal dari setiap baris
+```cut -d " " -f 1 filebaru.txt``` untuk menampilkan kata awal dari setiap baris.
+
+![cut](https://user-images.githubusercontent.com/82355684/221829827-37c5b0db-d07b-4176-8e12-02ea831fefd2.png)
 
 
 
