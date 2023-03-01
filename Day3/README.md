@@ -5,6 +5,7 @@
 WSL (Windows Subsystem Linux) adalah  fitur sistem operasi Windows yang memungkinkan untuk menjalankan OS GNU/Linux, aplikasi terminal bahkan aplikasi GUI langsung dari desktop Windows user.
 
 Berikut hasil install WSL di Windows
+
 ![install wsl](https://user-images.githubusercontent.com/82355684/221509865-500eba5d-a340-4e40-9843-0d1bed8e81b1.png)
 
 
@@ -92,6 +93,7 @@ ex:
 digunakan untuk mengganti teks menjadi tampilan kata yang ditentukan. misalnya kata **two** pada baris ke empat pada file diganti menjadi **2** maka digunakan ```sed -n '4 s/two/2/p' namafile.txt```
 
 ex:
+
 ![sed](https://user-images.githubusercontent.com/82355684/221827043-b3a2867e-31ca-4403-afe9-48767865b48b.png)
 
 ex: penggantian kata secara global gunakan fleg **-g**
@@ -110,21 +112,29 @@ digunakan untuk memotong ata mengekstrak bagian teks dari baris atau file.
 
 ## 4. Perintah di Linux
 
-1. ```pwd``` untuk mengetahui directory mana yang sedang dibuka
-2. ```ls``` untuk mengetahui file apa saja yang ada di dalam directory
-3. ```cd namafolder``` untuk masuk ke sebuah directory ```cd ..``` untuk keluar dari directory
-4. ```cat namafile.txt``` untuk membaca isi file ```cat > namafile.txt``` untuk menambahkan isi file ```cat >> namafile.txt``` untuk menambahkan isi file ke file yang sudah ada
-5. ```mkdir namafolder``` untuk membuat folder baru
-6. ```touch namafile.txt``` untuk membuat file baru
-7. ```mv namafilelama.txt namafilebaru.txt``` untuk mengganti nama file lama ke baru 
-8. ```nano``` untuk menampilakn text editor nano
-9. ```vi``` untuk menampilkan text editor vi
-10. ```find``` untuk mencari file yang berlokasi di dalam direktori
-11. ```head -n 3 namafile.txt``` untuk menampilkan baris isi text dalam file
+1. ```pwd``` untuk mengetahui directory mana yang sedang dibuka.
+2. ```ls``` untuk mengetahui file apa saja yang ada di dalam directory.
+```ls -a``` untuk melihat isi direktori beserta file tersembunyi.
+```ls -l``` untuk melihat isi direktori dan detailnya.
+3. ```cd namafolder``` untuk masuk ke sebuah directory. ```cd ..``` untuk keluar dari directory.
+4. ```cat namafile.txt``` untuk membaca isi file. ```cat > namafile.txt``` untuk menambahkan isi file. ```cat >> namafile.txt``` untuk menambahkan isi file ke file yang sudah ada.
+5. ```mkdir namafolder``` untuk membuat folder baru.
+6. ```touch namafile.txt``` untuk membuat file baru.
+7. ```mv namafilelama.txt namafilebaru.txt``` untuk mengganti nama file lama ke baru. 
+8. ```nano``` untuk menampilakn text editor nano.
+9. ```vi``` untuk menampilkan text editor vi.
+10. ```find``` untuk mencari file yang berlokasi di dalam direktori.
+11. ```head -n 3 namafile.txt``` untuk menampilkan baris isi text dalam file.
 12. ```tail -n 2 namafile.txt``` untuk menampilkan beberapa baris terakhir saja.
-13. ```diff namafile1.txt namafile2.txt``` untuk membandingkan isi dua file berdasarkan baris demi baris  
-14. ```uname -a``` untuk melihat informasi linux yang sedang running
-15. ```grep kataygdicari namafile.txt``` untuk mencari kata dalam file yang diinginkan 
-16. ```sudo apt install gedit``` untuk menginstall text editor gedit
+13. ```diff namafile1.txt namafile2.txt``` untuk membandingkan isi dua file berdasarkan baris demi baris.  
+14. ```uname -a``` untuk melihat informasi linux yang sedang running.
+15. ```grep kataygdicari namafile.txt``` untuk mencari kata dalam file yang diinginkan.
+```grep -r katayag dicari``` untuk mencari kata dalam file yang ada di dalam direktori.
+16. ```rm file.txt``` untuk menghapus file.
+```rm -i file.txt file.txt``` untuk menghapus file yang ada dalam direktori dengan memunculkan konfirmasi Y/N.
+```rm -r namadirektori``` untuk menghapus direktori yang ada isi filenya.
+17. ```echo "teks yang ingin dimasukkan" > namafile.txt``` untuk menambahkan teks ke dalam file yang baru dibuat.
+```echo "teks yang ditambahkan" >> namafile.txt``` untuk menambahkan isi teks ke dalalm file yang sudah ada.
+18. ```rmdir namadirektori``` untuk menghapus direktori.
 
 ![commandline](https://user-images.githubusercontent.com/82355684/221823256-74c93a5a-bb30-4d87-8ede-db89a6a4b795.png)
