@@ -77,16 +77,18 @@ Prosedur yang diterapkan pada git ini dapat membantu antar divisi project untuk 
 Sebelum mengenal git lebih jauh ada perintah yang fungsinya berbeda yaitu git remote dan git clone. perbedaannya adalah Git Remote digunakan untuk mengelola koneksi antara repositori lokal dan jarak jauh, sedangkan Git Clone digunakan untuk menyalin seluruh riwayat perubahan dari repositori jarak jauh ke repositori lokal.
 
 **Perintah Pada Git**
-    **menambahkan folder lokal ke repository github*
-    1. buat folder baru dan isi dengan file. folder kosong tidak bisa di push jika tidak ada file.
-    2. jalankan perintah
-    * ```git init```
-    * ```git add .```
-    * ```git commit -m "add komentar"```
-    * ```git branch -M main```
-    * buat repository baru di github dan salin link url repo tsb
-    * ```git remote add [namabranch] [url https repo]```
-    * ```git push -u origin main```
+
+**menambahkan folder lokal ke repository github*
+
+1. buat folder baru dan isi dengan file. folder kosong tidak bisa di push jika tidak ada file.
+2. jalankan perintah
+* ```git init```
+* ```git add .```
+* ```git commit -m "add komentar"```
+* ```git branch -M main```
+* buat repository baru di github dan salin link url repo tsb
+* ```git remote add [namabranch] [url https repo]```
+* ```git push -u origin main```
     
  **mengambil repository github ke lokal**
  1. buat folder di lokal
@@ -128,15 +130,27 @@ Sebelum mengenal git lebih jauh ada perintah yang fungsinya berbeda yaitu git re
 
 ## 5. Text Editor di Linux
 
-    1. Nano
+1. Nano
 
-    2. Vi
+![nano_](https://user-images.githubusercontent.com/82355684/222968294-fed4c909-38a7-4ef8-b6e9-72d4cdce051f.png)
 
-    3. Vim
+2. Vi
 
-    4. Pico
+![vi_](https://user-images.githubusercontent.com/82355684/222968321-68ab67f7-01b4-4d88-8971-47cacd4a059a.png)
 
-    5. Jed
+3. Vim
+
+![vim_](https://user-images.githubusercontent.com/82355684/222968328-1d5cd1fd-7160-4f82-9b0e-ade8973fc7e0.png)
+
+4. Pico
+
+![pico_](https://user-images.githubusercontent.com/82355684/222968338-1929ee9e-6e25-478a-94af-a799f4508aca.png)
+
+5. Jed
+
+![jed_](https://user-images.githubusercontent.com/82355684/222968364-8784a0d9-735a-4212-a8f0-5c30f696d23a.png)
+
+
 
 ## 6. Manipulation Text Command Line Linux
 
