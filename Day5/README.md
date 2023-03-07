@@ -121,8 +121,8 @@ Berikut adalah beberapa fitur utama GitLab dan fungsinya:
 
 1. Setup Git Global
 
-* git config --global user.name "Eno Fitriyanti"
-* git config --global user.email "enofitriyanti1102@gmail.com"
+* git config --global user.name "username"
+* git config --global user.email "example@gmail.com"
 
 2. Push direktrory lokal ke GitLab
 
