@@ -93,6 +93,8 @@ untuk mengetahui apa saja yang bisa dimasukkan ke file **```.gitignore```** bisa
 
 GitLab adalah platform hosting git repository yang memungkinkan pengembang untuk memasang GitLab di server mereka sendiri atau menggunakan versi cloud yang disediakan oleh GitLab.com. GitLab memiliki fitur-fitur yang serupa dengan GitHub, seperti kolaborasi dan manajemen proyek, tetapi GitLab juga menawarkan fitur-fitur yang lebih luas, seperti Continuous Integration dan Continuous Deployment (CI/CD), dan fitur-fitur DevOps yang lain. Selain itu, GitLab juga menyediakan fitur-fitur untuk melacak metrik performa aplikasi dan infrastruktur.
 
+![gitlab](https://user-images.githubusercontent.com/82355684/223319984-7ceec957-85c5-44d9-99fc-34757c0f131a.png)
+
 Berikut adalah beberapa fitur utama GitLab dan fungsinya:
 
 1. Repositori Git: GitLab menyediakan repositori Git untuk mengelola kode sumber proyek Anda. Anda dapat membuat cabang, melakukan commit, dan menggabungkan perubahan dengan mudah.
@@ -114,3 +116,38 @@ Berikut adalah beberapa fitur utama GitLab dan fungsinya:
 9. API: GitLab menyediakan API yang lengkap untuk mengakses data proyek Anda. Fitur ini memungkinkan Anda untuk mengintegrasikan GitLab dengan aplikasi atau layanan pihak ketiga.
 
 10. Integrations: GitLab menyediakan integrasi dengan banyak layanan pihak ketiga seperti Jira, Slack, dan Trello. Fitur ini memungkinkan Anda untuk mengintegrasikan GitLab dengan alat yang sudah digunakan tim Anda.
+
+#### How To use GitLab
+
+1. Setup Git Global
+
+* git config --global user.name "Eno Fitriyanti"
+* git config --global user.email "enofitriyanti1102@gmail.com"
+
+2. Push direktrory lokal ke GitLab
+
+* ```cd folder```
+* ```git init --initial-branch=main```
+* ```git remote add origin https://gitlab.com/enofitriyanti11/test2.git```
+* ```git add .```
+* ```git commit -m "Initial commit"```
+* ```git push -u origin main```
+
+3. membuat repository baru dan add file di lokal (clone)
+
+* masuk ke folder atau desktop tempat ingin menyimpan code yang akan di clone
+* ```git clone https://gitlab.com/enofitriyanti11/test2.git```
+* ```cd test2```
+* ```git switch -c main```
+* ```touch README.md```
+* ```git add README.md```
+* ```git commit -m "add README"```
+* ```git push -u origin main```
+
+4. Push repositori yang usdah ada
+
+* ```cd existing_repo```
+* ```git remote rename origin old-origin```
+* ```git remote add origin https://gitlab.com/enofitriyanti11/test2.git```
+* ```git push -u origin --all```
+* ```git push -u origin --tags```
