@@ -87,6 +87,10 @@ contoh penggunaan:
 
 untuk mengetahui apa saja yang bisa dimasukkan ke file **```.gitignore```** bisa akses website ```github/github/gitignore``` atau bisa mengakses website **```gitignore.io```** untuk megenerate file apa saja yang dimasukkan ke file .gitignore
 
+**Git Ignore dan Git Attribbutes**
+
+Git ignore dan Git attributes adalah dua fitur yang berbeda dalam Git yang digunakan untuk tujuan yang berbeda. Git ignore digunakan untuk mengabaikan file atau direktori yang tidak ingin dimasukkan ke dalam repositori Git, sementara Git attributes digunakan untuk mengatur atribut file dalam repositori Git.
+
 
 
 ## 4. GitLab
