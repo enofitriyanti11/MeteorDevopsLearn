@@ -22,9 +22,57 @@ Kita butuh NVM saat kita membutuhkan Nodejs versi tertentu.
 
 composer adalah tools dependency manager untuk project php yang berfungsi sebagai penghubung antara project PHP dengan library dari luar yaitu dengan mengunduh libarary dari packagist.org
 
+**Install di windows**
 ![install](https://user-images.githubusercontent.com/82355684/221145062-e543424f-66ca-4f72-8632-82fb5c8abe70.png)
 
-# Cara menjalankan project berbagai bahasa pemrograman
+**Install di Linux**
+![instalpackagemanagerlinux](https://user-images.githubusercontent.com/82355684/223921245-3250ab0a-7faf-4fde-9fba-86a5bf2ebcf0.png)
+
+
+## Command NPM
+* mengecek versi NPM
+```npm -v```
+* memulai project
+```npm init``` diarahkan untuk membuat file package.json
+* menginstall modul
+```npm install -g``` or ```npm install <package-name>```
+* menginstall package sebagai development dependency:
+```npm install <package-name> --save-dev```
+* menginstall modul secara global pada sistem
+```npm install <package-name> --global```
+* mengupdate semua package dalam project
+```npm update```
+* mengupdate npm ke versi terbaru
+```npm install npm@latest -g```
+
+## Command YARN
+* ```yarn init project_name``` untuk membuat inisialisasi dan membuat dua file konfigurasi yaitu package.json dan yarn.lock
+* ```yarn add [package]@[version]``` untuk menentukan versi tertentu untuk setiap package atau library sebagai dependensi bagi proyek
+* ```yarn upgrade [package]@[version]``` untuk menentukan versi mana yang akan digunakan untuk mengupdate package
+* ```yarn remove [package]``` Untuk menghapus package dari sebuah proyek
+* ```yarn install``` untuk menginstal semua dependensi yang ditentukan
+
+**Mengupgrade Yarn**
+
+* Kalau Yarn diinstal dengan npm:
+```npm install --global yarn```
+* Untuk mengupgrade Yarn ke versi terbaru:
+```yarn set version latest```
+* Untuk mengupgrade Yarn ke versi tertentu:
+```yarn set version [version.number]```
+* Pada komputer Unix menggunakan cURL:
+```curl --compressed -o- -L https://yarnpkg.com/install.sh | bash```
+
+**Command Yarn**
+
+* yarn add: menambahkan paket untuk digunakan dalam paket  saat ini.
+* yarn init: menginisialisasi pengembangan sebuah paket.
+* yarn install: menginstal semua dependensi yang didefinisikan dalam berkas package.json.
+* yarn publish: mempublikasikan sebuah paket ke packet manager.
+* yarn remove: menghapus paket yang tidak terpakai dari paket saat ini.
+
+
+# Cara menjalankan project berbagai bahasa pemrograman di Windows
 
 ### 1. Reactjs
 
@@ -41,7 +89,7 @@ sebelum menjalankan project react pastikan di lokal sudah terinstal nodejs dan n
 sebelum menjalankan project, pastikan laptop sudah menginstal composer dan php. kemudian dibutuhkan database, bisa menggunakan phpmyadmin.
 
 **cara running project laravel**
-  1. jalankan perintah *cp .en.example .env* untuk mengcopy file .env sementara untuk membuat database baru di lokal.
+  1. jalankan perintah *cp .env.example .env* untuk mengcopy file .env sementara untuk membuat database baru di lokal.
   2. jalankan perintah *composer install* untuk menginstal package manager composer pada project.
   3. jalankan perintah *php artisan key:generate*
   
@@ -97,6 +145,31 @@ ex: go get nama_paket
 ex: go test nama_file_test.go
 6. go mod ==> untuk mengelola dependensi pada program Go
 ex: go mod init nama_modul
+
+# Cara menjalankan project berbagai bahasa pemrograman di Linux
+
+1. React js
+
+* buka project
+* ```npm install```
+* ```npm start```
+![reactjslinux](https://user-images.githubusercontent.com/82355684/223924965-660adbe4-ca66-4961-aa56-ef47df02b0d0.png)
+
+* ```npm run build``` digunakan untuk  membuat production build
+
+
+2. Laravel
+
+
+* jalankan perintah *cp .env.example .env* untuk mengcopy file .env sementara untuk membuat database baru di lokal
+* jalankan perintah *composer install* untuk menginstal package manager composer pada project.
+* jalankan perintah *php artisan key:generate* 
+* kemudian buat database baru di phpmyadmin dengan mneyesuaikan yang ada di file .env pada project. Untuk **DB_HOST=127.0.0.1 , DB_USERNAME=root , DB_PASSWORD={kosongkan} *untuk DB_USERNAME dan DB_PASWWOR itu sesuai dnegan yg ada di lokal* .**
+* jalankan perintah *php artisan config:cache*
+* jalankan perintah *php artisan migrate*
+* jalankan perintah *php artisan serve* maka project akan diarahkan ke server
+
+
 
 
 # Apa itu GIT, dan GITHUB
