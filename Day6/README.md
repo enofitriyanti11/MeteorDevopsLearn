@@ -12,13 +12,14 @@ kemudian isi file seperti berikut:
 server {
 	listen 80;
 	listen [::]:80;
-
-	server_name eno_nih.com;
-
+	
+	server_name eno_nih.com
+	
 	location / {
-	  proxy_pass  http://localhost:3000;
+		proxy_pass http://localhost:3000;
 	}
 }
+
 
 * ```sudo ln -s /etc/nginx/sites-available/reactjs.conf /etc/nginx/sites-enabled/```
 * buat hosts untuk akses project react.js di browser:
