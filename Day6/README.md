@@ -10,6 +10,7 @@
 kemudian isi file seperti berikut:
 
 server {
+<<<<<<< HEAD
     listen 80;
     listen [::]:80;
 
@@ -18,7 +19,18 @@ server {
     location / {
         proxy_pass http://localhost:3000;
     }
+=======
+	listen 80;
+	listen [::]:80;
+	
+	server_name eno_nih.com
+	
+	location / {
+		proxy_pass http://localhost:3000;
+	}
+>>>>>>> refs/remotes/origin/main
 }
+
 
 * ```sudo ln -s /etc/nginx/sites-available/reactjs.conf /etc/nginx/sites-enabled/```
 * buat hosts untuk akses project react.js di browser:
