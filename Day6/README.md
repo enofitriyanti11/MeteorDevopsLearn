@@ -11,7 +11,8 @@
 ```sudo nano reactjs.conf```
 kemudian isi file konfigurasi seperti berikut:
 
-```server {
+```server
+server {
     listen 80;
     listen [::]:80;
 
@@ -46,8 +47,8 @@ Output:
 4. pada file ```.env``` yang ada di project laravel konfigurasikan dengan MySQL yang sudah dibuat sebelumnya.
 5. selanjutnya buat file configurasi di ```/etc/nginx/sites-available/laravel1.conf``` dengan format sbb:
 
-
-```server {
+```server
+server {
     listen 80;
     listen [::]:80 ipv6only=on;
 
@@ -121,7 +122,8 @@ Jika sudah ada project lain yang sudah di pull dari github, maka tinggal meminda
 
 ## Konfigurasi Nginx Untuk aplikasi Laravel
 
-```server {
+```server
+server {
     listen 80;
     server_name laravel.com
     root /var/www/html/laravel/public;
