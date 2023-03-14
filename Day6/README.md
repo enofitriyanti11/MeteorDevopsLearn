@@ -160,10 +160,16 @@ bagian-bagian konfigurasi sebagai berikut:
 6. Charset
 * digunakan untuk menentukan set karakter oleh server. set karakter yang digunakan utf-8
 7. Location
-Location menentukan cara server menangani permintaan yang masuk. Ada dua lokasi yang didefenisikan yaitu ```/``` dan ```~\.php$```.
+* Location menentukan cara server menangani permintaan yang masuk. Ada dua lokasi yang didefenisikan yaitu ```/``` dan ```~\.php$```.
 * ```/``` untuk menangani permintaan yang tidak mengandung ekstensi file
 * ```~\.php$``` untuk menangani permintaan yang mengandung ekstensi file ```.php```
 8. Try Files
 * digunakan untuk menentukan urutan file yang dicoba oleh server saat mencari file yang cocok dengan permintaan user. pada contoh diatas, server mencoba untuk menemukan file yang cocok dengan URI yang diminta, kemudian mencoba untuk menemukan direktori dengan nama yang sama dan akhirnya mencoba untuk menjalankan file ```index.php``` dengan parameter query string.
+* ```try_files $uri $uri/ /index.php?$query_string;``` berfungsi untuk menentukan bagaimana Nginx akan menangani request dari klien pada server. Jika file yang di-request tidak ditemukan, maka Nginx akan mencoba untuk mengarahkan request ke file index.php pada root directory.
 9. FastCGI
-* digunakan unutk menentukan bagaimana server akan menjalankan script PHP. Pada conoth diatas, server akan menghubungkan ke socket Unix yang dijalankan oleh PHP-FPM dan akan mengirimkan informasi tentang script yang diminta serta konfigurasi lainnya. Konfigurasi ```SCRIPT_FILENAME``` menentukan nama file yang akan dijalankan oleh PHP-FPM. Bagian ```include fastcgi_params``` adalah direktif yang memuat file konfigurasi standar untuk FastCGI.
+* digunakan unutk menentukan bagaimana server akan menjalankan script PHP. Pada contoh diatas, server akan menghubungkan ke socket Unix yang dijalankan oleh PHP-FPM dan akan mengirimkan informasi tentang script yang diminta serta konfigurasi lainnya. Konfigurasi ```SCRIPT_FILENAME``` menentukan nama file yang akan dijalankan oleh PHP-FPM. Bagian ```include fastcgi_params``` adalah direktif yang memuat file konfigurasi standar untuk FastCGI.
+* location ~ \.php$ : Mengatur Nginx agar hanya menangani file PHP
+* fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock : Mengatur lokasi socket PHP-FPM
+* fastcgi_index index.php : Mengatur file index PHP
+* fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name : Mengatur variabel SCRIPT_FILENAME untuk fastcgi_params
+* include fastcgi_params : Mengatur fastcgi_params untuk pengaturan tambahan
