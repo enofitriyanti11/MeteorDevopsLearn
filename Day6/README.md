@@ -148,22 +148,22 @@ server {
 bagian-bagian konfigurasi sebagai berikut:
 
 1. Server Block
-berisi informasi tentang server yang akan digunakan seperti nama domain atau alamat IP dan port yang digunakan.
+* berisi informasi tentang server yang akan digunakan seperti nama domain atau alamat IP dan port yang digunakan.
 2. Listen
-digunakan untuk menentukan port yang akan digunakan oleh Nginx. Contohnya port yang digunakan adalah 80.
+* digunakan untuk menentukan port yang akan digunakan oleh Nginx. Contohnya port yang digunakan adalah 80.
 3. Server Name
-digunakan untuk menentukan nama domain atau alamat IP Server. 
+* digunakan untuk menentukan nama domain atau alamat IP Server. 
 4. Root
-bagian ini untuk menetukan direktori root aplikasi Laravel. 
+* bagian ini untuk menetukan direktori root aplikasi Laravel. 
 5. Index
-bagian index menentukan file yang akan ditampilkan jika user mengakses direktori root. 
+* bagian index menentukan file yang akan ditampilkan jika user mengakses direktori root. 
 6. Charset
-digunakan untuk menentukan set karakter oleh server. set karakter yang digunakan utf-8
+* digunakan untuk menentukan set karakter oleh server. set karakter yang digunakan utf-8
 7. Location
 Location menentukan cara server menangani permintaan yang masuk. Ada dua lokasi yang didefenisikan yaitu ```/``` dan ```~\.php$```.
-```/``` untuk menangani permintaan yang tidak mengandung ekstensi file
-```~\.php$``` untuk menangani permintaan yang mengandung ekstensi file ```.php```
+* ```/``` untuk menangani permintaan yang tidak mengandung ekstensi file
+* ```~\.php$``` untuk menangani permintaan yang mengandung ekstensi file ```.php```
 8. Try Files
-digunakan untuk menentukan urutan file yang dicoba oleh server saat mencari file yang cocok dengan permintaan user. pada contoh diatas, server mencoba untuk menemukan file yang cocok dengan URI yang diminta, kemudian mencoba untuk menemukan direktori dengan nama yang sama dan akhirnya mencoba untuk menjalankan file ```index.php``` dengan parameter query string.
+* digunakan untuk menentukan urutan file yang dicoba oleh server saat mencari file yang cocok dengan permintaan user. pada contoh diatas, server mencoba untuk menemukan file yang cocok dengan URI yang diminta, kemudian mencoba untuk menemukan direktori dengan nama yang sama dan akhirnya mencoba untuk menjalankan file ```index.php``` dengan parameter query string.
 9. FastCGI
-digunakan unutk menentukan bagaimana server akan menjalankan script PHP. Pada conoth diatas, server akan menghubungkan ke socket Unix yang dijalankan oleh PHP-FPM dan akan mengirimkan informasi tentang script yang diminta serta konfigurasi lainnya. Konfigurasi ```SCRIPT_FILENAME``` menentukan nama file yang akan dijalankan oleh PHP-FPM. Bagian ```include fastcgi_params``` adalah direktif yang memuat file konfigurasi standar untuk FastCGI.
+* digunakan unutk menentukan bagaimana server akan menjalankan script PHP. Pada conoth diatas, server akan menghubungkan ke socket Unix yang dijalankan oleh PHP-FPM dan akan mengirimkan informasi tentang script yang diminta serta konfigurasi lainnya. Konfigurasi ```SCRIPT_FILENAME``` menentukan nama file yang akan dijalankan oleh PHP-FPM. Bagian ```include fastcgi_params``` adalah direktif yang memuat file konfigurasi standar untuk FastCGI.
