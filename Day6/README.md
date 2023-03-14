@@ -12,19 +12,17 @@
 kemudian isi file konfigurasi seperti berikut:
 
 server {
-        listen 80;
-        listen [::]:80;
+    listen 80;
+    listen [::]:80;
 
-        server_name reactjsproject.com;
+    server_name reactjsproject.com;
 
-        location / {
-          root /var/www/html/reactjs/build;
-          index index.html
-          try_files $uri /index.html;
-        }
+    location / {
+        root /var/www/html/reactjs/build;
+        index index.html;
+        try_files $uri /index.html;
+    }
 }
-
-
 
 * ```sudo ln -s /etc/nginx/sites-available/reactjs.conf /etc/nginx/sites-enabled/```
 * buat hosts untuk akses project react.js di browser:
@@ -49,32 +47,33 @@ Output:
 
 
 server {
-     listen 80;
-     listen [::]:80 ipv6only=on;
-     # Log files for Debugging
-     access_log /var/log/nginx/vhostlaravel-access.log;
-     error_log /var/log/nginx/vhostlaravel-error.log;
+    listen 80;
+    listen [::]:80 ipv6only=on;
 
-     # Webroot Directory for Laravel project
-     root /var/www/html/laravel1/public;
-     index index.php index.html index.htm;
+    # Log files for Debugging
+    access_log /var/log/nginx/vhostlaravel-access.log;
+    error_log /var/log/nginx/vhostlaravel-error.log;
 
-     # Your Domain Name
-     server_name laravel_project.com;
+    # Webroot Directory for Laravel Project
+    root /var/www/html/laravel1/public;
+    index index.php indexx.html index.htm;
 
-     location / {
-             try_files $uri $uri/ /index.php?$query_string;
-     }
+    # Domain
+    server_name laravelproject.com;
 
-     # PHP-FPM Configuration Nginx
-     location ~ \.php$ {
-             try_files $uri =404;
-             fastcgi_split_path_info ^(.+\.php)(/.+)$;
-             fastcgi_pass unix:/run/php/php8.1-fpm.sock;
-             fastcgi_index index.php;
-             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-             include fastcgi_params;
-     }
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    # PHP-FPM Configuration Nginx
+    location ~ \.php$ {
+        try_files $uri =404;
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass unix:run/php//php8.1-fpm.sock;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
 }
 
 6. kemudian lakukan symlink: ```sudo ln -s /etc/nginx/sites-available/laravel1.conf /etc/nginx/sites-enabled/``` 
@@ -122,8 +121,8 @@ Jika sudah ada project lain yang sudah di pull dari github, maka tinggal meminda
 
 server {
     listen 80;
-    server_name laravel.com;
-    root /path/to/laravel/public;
+    server_name laravel.com
+    root /var/www/html/laravel/public;
     index index.php index.html;
     charset utf-8;
 
@@ -132,12 +131,14 @@ server {
     }
 
     location ~ \.php$ {
-        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
         fastcgi_index index.php;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
     }
+
 }
+
 
 bagian-bagian konfigurasi sebagai berikut:
 
