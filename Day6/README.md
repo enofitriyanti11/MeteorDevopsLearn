@@ -58,7 +58,7 @@ server {
 
     # Webroot Directory for Laravel Project
     root /var/www/html/laravel1/public;
-    index index.php indexx.html index.htm;
+    index index.php index.html index.htm;
 
     # Domain
     server_name laravelproject.com;
