@@ -2,7 +2,7 @@
 
 ## 1. INSTALL DOCKER
 
-1. update sistem dengan perintah berikut:
+#### 1. update sistem dengan perintah berikut:
 
 ```sudo apt update```
 ```sudo apt upgrade```
@@ -11,33 +11,37 @@
 
 ![installdocker2](https://user-images.githubusercontent.com/82355684/225030934-9ec36b30-fb9d-41fe-9987-39e3716c4569.png)
 
-2. install paket dependensi yag diperlukan
+#### 2. install paket dependensi yag diperlukan
 
 ```sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release```
 
 ![installdocker3](https://user-images.githubusercontent.com/82355684/225030944-b914cb56-1e68-4547-a3a1-3740aa588925.png)
 
-3. tambahkan kunci GPG resmi Docker ke sistem
+#### 3. tambahkan kunci GPG resmi Docker ke sistem
 
 ```curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg```
 
-4. Tambahkan repository Docker ke sumber software Ubuntu
+#### 4. Tambahkan repository Docker ke sumber software Ubuntu
 
-```echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null```
+```echo
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
 
-5. kemudian jalankan perintah berikut unutk memperbaharui paket
+#### 5. kemudian jalankan perintah berikut unutk memperbaharui paket
 
 ```sudo apt update```
 
 ![installdocker4](https://user-images.githubusercontent.com/82355684/225030954-8af3aa99-6f44-4bc6-8267-ddba9f97ce4a.png)
 
-6. Install Docker
+#### 6. Install Docker
 
-```sudo apt install docker-ce docker-ce-cli containerd.io```
+```sudo 
+sudo apt install docker-ce docker-ce-cli containerd.io
+```
 
 ![installdocker5](https://user-images.githubusercontent.com/82355684/225030963-e596c8ed-89e2-4870-b3bd-7c9d544aecea.png)
 
-7. setelah instalasi selesai, periksa apakah docker berhasil diinstall
+#### 7. setelah instalasi selesai, periksa apakah docker berhasil diinstall
 
 ```sudo docker run hello-world```
 
@@ -57,7 +61,9 @@
 
 untuk menggunakan docker desktop lakukan login/register terlebih dahulu. 
 dengan menjalankan perintah di terminal:
-```gpg --generate-key``` kemudian akan diminta username, email dan password
+
+```gpg --generate-key``` kemudian akan diminta username, email dan password.
+
 ```pass init <generated gpg-id public key>``` digunakan untuk menginisialisasi repositori Password Store (pass) dengan GPG key ID yang telah di-generate sebelumnya. Repositori ini adalah tempat untuk menyimpan password yang dienkripsi dengan menggunakan kunci publik GPG tersebut.
 
 
@@ -67,7 +73,7 @@ dengan menjalankan perintah di terminal:
 
 1. buat direktori baru: example
 ```mkdir docker-project```
-2. tambahkan file ```Dockerfile``` dan file ```nginx.conf```
+2. tambahkan file ```Dockerfile``` dan file ```nginx.conf```.
 * file ```Dockerfile``` digunakan untuk membangun Docker Image dan mengandung instruksi yang diperlukan untuk membangun sebuah image.
 
 ```Dockerfile
@@ -89,12 +95,12 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 
 * **FROM ubuntu:22.04** = perintah untuk menentukan base image Docker yang digunakan untuk membangun image baru pada OS Ubuntu 22.04
-* **RUN apt-get update && \ apt-get install -y nginx** = intsruksi untuk melakukan update pada Ubuntu dan menginstall Nginx sebagai web server.
+* **RUN apt-get update && \ apt-get install -y nginx** = instruksi untuk melakukan update pada Ubuntu dan menginstall Nginx sebagai web server.
 * **COPY nginx.conf /etc/nginx/nginx.conf** = digunakan untuk menyalin file konfigurasi Nginx dari direktori lokal yang sama dengan Dockerfile ke dalam direktori /etc/nginx/nginx.conf pada container.
 * **EXPOSE 8080:80** = instruksi untuk mengekspos port 80 pada container agar dapat diakses dari luar melalui port 8080.
 * **CMD ["nginx", "-g", "daemon off;"]** = instruksi untuk menjalankan Nginx pada container ketika container tersebut dijalankan. perintah ini memulai server web Nginx dengan opsi "daemon off" agar berjalan di foreground dan bukan sebagai proses latar belakang.
 
-* file ```nginx.conf``` digunakan untuk mengkonfigurasi server web Nginx.
+* file **nginx.conf** digunakan untuk mengkonfigurasi server web Nginx.
 
 ```nginx.conf
 worker_processes 1;
@@ -115,19 +121,20 @@ http {
     }
 }
 ```
-* worker_processes 1; >> Menentukan berapa banyak proses yang akan dijalankan untuk server Nginx. Dalam kasus ini, hanya satu proses yang akan dijalankan.
-* events { worker_connections 1024; } >> Mengatur konfigurasi untuk koneksi yang diterima oleh server. Dalam kasus ini, setiap proses server akan dapat menangani hingga 1024 koneksi secara bersamaan.
-* http {} >> Merupakan blok konfigurasi untuk modul HTTP di server Nginx
-* server {} >> mendefenisikan server block untuk Nginx
-* listen 8080; >> Mendefinisikan port yang akan digunakan oleh server Nginx. Dalam kasus ini, server akan mendengarkan koneksi pada port 8080.
-* server_name localhost; >> Menentukan nama domain yang akan digunakan untuk server. Dalam kasus ini, nama domain adalah localhost.
-* location / {} >> mendefenisikan bagian konfigurasi untuk lokasi root
-* root /var/www/html; >> Menentukan direktori root di mana file index.html dan file lainnya dapat ditemukan.
-* index index.html; >> Menentukan file index yang akan diakses ketika pengguna membuka alamat root server. Dalam kasus ini, file yang akan diakses adalah index.html.
+* ```worker_processes 1;``` >> Menentukan berapa banyak proses yang akan dijalankan untuk server Nginx. Dalam kasus ini, hanya satu proses yang akan dijalankan.
+* ```events``` { worker_connections 1024; } >> Mengatur konfigurasi untuk koneksi yang diterima oleh server. Dalam kasus ini, setiap proses server akan dapat menangani hingga 1024 koneksi secara bersamaan.
+* ```http {}``` >> Merupakan blok konfigurasi untuk modul HTTP di server Nginx
+* ```server {}``` >> mendefenisikan server block untuk Nginx
+* ```listen 8080;``` >> Mendefinisikan port yang akan digunakan oleh server Nginx. Dalam kasus ini, server akan mendengarkan koneksi pada port 8080.
+* ```server_name localhost;``` >> Menentukan nama domain yang akan digunakan untuk server. Dalam kasus ini, nama domain adalah localhost.
+* ```location / {}``` >> mendefenisikan bagian konfigurasi untuk lokasi root
+* ```root /var/www/html;``` >> Menentukan direktori root di mana file index.html dan file lainnya dapat ditemukan.
+* ```index index.html;``` >> Menentukan file index yang akan diakses ketika pengguna membuka alamat root server. Dalam kasus ini, file yang akan diakses adalah index.html.
 
 3. buka terminal di teks editor. jalankan perintah 
 
-```docker build -t ubuntu-nginx:latest .``` untuk membuat docker image
+```docker build -t ubuntu-nginx:latest .``` untuk membuat docker image.
+
 ```docker run -d -p 8080:80 ubuntu-nginx:latest``` untuk menjalankan docker container di port 8080
 
 Hasil:
@@ -135,3 +142,36 @@ Hasil:
 ![dockerfilecreate](https://user-images.githubusercontent.com/82355684/225241437-45c5d9b3-73df-4c77-ae50-340f412ca219.png)
 
 ![dockerfilerunning](https://user-images.githubusercontent.com/82355684/225241447-ef63fed8-667d-4d28-bd52-4ad3d4c1195f.png)
+
+
+## 3. Perintah Docker
+
+Berikut adalah beberapa perintah dasar pada Docker:
+
+1. ```docker run```: menjalankan sebuah kontainer baru dari image yang ditentukan.
+
+2. ```docker stop```: menghentikan sebuah kontainer yang sedang berjalan.
+
+3. ```docker ps```: menampilkan daftar kontainer yang sedang berjalan.
+
+4. ```docker images```: menampilkan daftar image yang tersimpan di sistem.
+
+5. ```docker rm```: menghapus sebuah kontainer yang sudah tidak digunakan.
+
+6. ```docker rmi```: menghapus sebuah image yang sudah tidak digunakan.
+
+7. ```docker build```: membuat image baru dari Dockerfile.
+
+8. ```docker push```: mengunggah sebuah image ke Docker Registry.
+
+9. ```docker pull```: mengunduh sebuah image dari Docker Registry.
+
+10. ```docker exec```: menjalankan sebuah perintah di dalam kontainer yang sedang berjalan.
+
+11. ```docker logs```: menampilkan log dari sebuah kontainer.
+
+12. ```docker network```: mengelola jaringan Docker.
+
+13. ```docker volume```: mengelola volume Docker.
+
+14. ```docker-compose```: mengelola aplikasi multi-kontainer dengan file YAML.
