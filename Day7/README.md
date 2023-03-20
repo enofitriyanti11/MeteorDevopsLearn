@@ -175,3 +175,27 @@ Berikut adalah beberapa perintah dasar pada Docker:
 13. ```docker volume```: mengelola volume Docker.
 
 14. ```docker-compose```: mengelola aplikasi multi-kontainer dengan file YAML.
+
+
+## 4. Reverse Proxy Nginx
+
+Untuk melakukan reverse proxy, pastikan sudah menyiapkan docker image aplikasi yang ingin dijalankan di Nginx. Nginx tidak bisa jalan jika docker containernya tidak running. 
+Langkahnya sbb:
+* buat Dockerfile di file project React.js, dan running docker image dari project React.js. kemudian running di browser
+![image](https://user-images.githubusercontent.com/82355684/226278138-bb0f3624-fe8c-411e-b394-58bdbc29022e.png)
+
+![Screenshot from 2023-03-20 14-24-40](https://user-images.githubusercontent.com/82355684/226277238-1b1a3869-617f-4275-8175-e8a298c45e3b.png)
+
+![Screenshot from 2023-03-20 14-23-52](https://user-images.githubusercontent.com/82355684/226277240-eb96f58e-b9c6-48d9-9c40-4a04972267c6.png)
+
+* buat file konfigurasi untuk reactjs di nginx : ```sudo nano /etc/nginx/sites-available/reactjs.conf``` seperti berikut:
+![Screenshot from 2023-03-20 14-34-08](https://user-images.githubusercontent.com/82355684/226277230-6ce5a23a-bacb-41cf-a089-b8542a8e531e.png)
+
+* defenisikan IP di ```sudo nano /etc/hosts``` seperti gambar berikut:
+![Screenshot from 2023-03-20 14-31-07](https://user-images.githubusercontent.com/82355684/226277235-a2a911a4-0f6b-456e-9f63-11fc0dca0258.png)
+
+* di terminal, jalankan perintah 
++ ```sudo nginx -t```
++ ```sudo systemctl reload nginx```
+
+![Screenshot from 2023-03-20 14-34-38](https://user-images.githubusercontent.com/82355684/226277215-8ebbe51d-7f08-442a-bf64-0babb6de05ec.png)
