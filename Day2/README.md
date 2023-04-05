@@ -205,8 +205,8 @@ sebelum mengenal git lebih jauh ada perintah yang fungsinya berbeda yaitu git re
 1. buat folder di lokal
 2. masuk ke folder tsb
 3. lakukan ```git init```
-4. lakukan git remote ex: git remote add [nama branch] [url repo] ==> ```git remote add master https://github.com/rizkipa0904/nayacake.git```
-5. lakukan git pull ex: git pull [URL repo] ==> ```git pull https://github.com/rizkipa0904/nayacake.git```
+4. lakukan git remote ex: git remote add [nama branch] [url repo] ==> ```git remote add master https://github.com/akun/repo.git```
+5. lakukan git pull ex: git pull [URL repo] ==> ```git pull https://github.com/akun/repo.git```
 
 **git clone digunakan untuk mengupdate apa yang telah di update d repository akan terupdate juga di lokal**
 ```git clone https://github.com/nama-akun/repo.git```
