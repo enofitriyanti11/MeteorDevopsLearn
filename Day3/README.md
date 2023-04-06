@@ -23,10 +23,14 @@ Nano merupakan teks editor kloning dari Pico dengan beberapa peningkatan. Nano t
 
 ![nano](https://user-images.githubusercontent.com/82355684/221520758-c32f4bc4-7ee0-414a-bf2f-1aa5ccc1921d.png)
 
+**Command**
+
+```Ctrl + x``` => menyimpan file kemudian ubah nama file sesuai kebutuhan.
+
 3. Emacs
 
-
 ![Emacs](https://user-images.githubusercontent.com/82355684/221521070-127d4abc-ff22-4dd3-8d5c-a3afbb8e0763.png)
+
 
 
 4. Vim
@@ -53,7 +57,7 @@ JED merupakan teks editor berbasis teks lintas platform. Website resmi: http://w
 * Menu Drop-down
 * Emulator editor Emacs, EDT, WordStar, Borland, Brief
 * Bisa membaca Texinfo (GNU info)
-* Edit TeX
+* Edit Tex
 
 ![Jed](https://user-images.githubusercontent.com/82355684/221521655-bcf8297e-d863-44e3-9b6c-40e0ec53dce1.png)
 

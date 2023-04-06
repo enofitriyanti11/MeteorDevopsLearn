@@ -170,8 +170,6 @@ ex: go mod init nama_modul
 * jalankan perintah *php artisan serve* maka project akan diarahkan ke server
 
 
-
-
 # Apa itu GIT, dan GITHUB
 
 Git adalah sebuah software yang digunakan untuk mencatat perubahan seluruh file atau repository yang ada pada sebuah project
