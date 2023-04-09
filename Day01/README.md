@@ -101,3 +101,31 @@ Berikut ini adalah beberapa Langkah umum dalam cara kerja DevOps di industry IT:
 6)	Kolaborasi yang lebih baik : DevOps meningkatkan kolaborasi antara tim development dan operation, sehingga memungkinkan mereka untuk lebih cepat merespon perubahan pasar dan kebutuhan user. 
  
 Dengan mengadopsi DevOps, perusahaan dapat meningkatkan efisiensi, mempercepat waktu rilis produk, meningkatkan kualitas produk dan meminimalkan risiko kesalahan ynag terjadi selama proses pengembangan dan operasi.
+
+
+
+## Hal lain tentang DevOps
+
+DevOps Lifecycle
+
+1. CONTINUOUS DEVELOPMENT
+Tools: Git, SVN, Mercurial, CV
+Fase yang melibatkan plan dan code dari software. Menentukan visi proyek selama fase perencanaan dan pengembangan mulai dari mengembangkan kode untuk aplikasi.
+
+2. CONTINUOUS INTEGRATION
+Tools: Jenkins, TeamCity, Travis
+tahap ini inti dari siklus hidup DevOps, karena ini adalah praktik yang dilakukan  oleh para pengembang yang melakukan perubahan pada kode sumber dengan lebih sering. Hal ini dilakukan setiap hari ataupun mingguan.
+
+3. CONTINUOUS TESTING
+Tools: Jenkins, Selenium TestNG, JUnit
+fase ini dilakukan pengujian terhadap software yang dikembangkan secara terus menerus untuk mencari bug menggunakan alat pengujian otomatisasi.
+
+4. CONTINUOUS DEPLOYMENT
+Conﬁguration Management Tools – Chef, Puppet, Ansible
+Containerization Tools – Docker, Vagrant
+tahap ini mendeploy code pada server produksi. pastikan untuk mendeploy code dengan benar di semua server. Tools2 tersebut untuk membantu dalam mencapai Penerapan Berkelanjutan (Continuous Deployment/CD)
+
+
+5. CONTINUOUS MONITORING
+Tools: Splunk, ELK Stack, Nagios, New Relic
+Tahap ini penting dalam lifecycle DevOps dalam memantau kinerja aplikasi. semua informasi penting tentang penggunaan software akan dicatat. Kemudian informasi tersebut digunakan untuk memerikasa fungsionalitas aplikasi yang tepat. DevOps dapat menyelesaikan kesalahan seperti low memory, server not reachable, dll.
