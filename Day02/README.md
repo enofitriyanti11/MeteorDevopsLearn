@@ -5,31 +5,14 @@
 Nodejs adalah adalah runtime environment untuk JavaScript yang bersifat open-source dan cross-platform. Dengan Node.js kita dapat menjalankan kode JavaScript di mana pun, tidak hanya terbatas pada lingkungan browser.
 Node.js juga menyediakan banyak library/module JavaScript yang membantu menyederhanakan pengembangan aplikasi web.
 
+Node Js bukanlah bahasa pemrograman, melainkan runtime alias interpreter JavaScript. Dalam kata lain, Node Js adalah pendukung JavaScript agar dapat lebih optimal digunakan terutama untuk keperluan yang lebih dari sekadar pengerjaan frontend.
+
 ### 2. NPM
 
 NPM adalah mengelola package Javascript untuk menginstal modul, berbagi dependensi, dan berbagi tool. Dengan jumlah package yang banyak tersebut, seorang developer dapat terbantu terutama dalam soal waktu pembuatan aplikasi. 
+NPM adalah sejenis tools untuk melakukan pengelolaan paket untuk NodeJS.
 
-### 3. YARN (Yet Another Resource Negosiator)
-
-Kegunaannya sama dengan npm yaitu sebagia alternatif package manager selain npm untuk Nodejs. Tujuan awal dikembangkannya Yarn adalah untuk mengatasi masalah yang ada pada npm. Seiring perkembangannya, fitur yang dimiliki kedua package manager ini semakin serupa, namun Yarn tetap menjadi pilihan beberapa pengguna JavaScript
-
-### 3. NVM (Node Version Manager)
-
-NVM adalah sebuah program yang akan membantu kita menggunakan lebih dari satu versi Nodejs di dalam satu komputer. NVM lebih mudah digunakan karena selain untuk menentukan versi Nodejs yang akan digunakan, NVM juga akan membantu kita menginstalnya dan tentunya terupdate dengan versi resmi yang dari website Nodejs.
-Kita butuh NVM saat kita membutuhkan Nodejs versi tertentu.
-
-### 4. Composer
-
-composer adalah tools dependency manager untuk project php yang berfungsi sebagai penghubung antara project PHP dengan library dari luar yaitu dengan mengunduh libarary dari packagist.org
-
-**Install di windows**
-![install](https://user-images.githubusercontent.com/82355684/221145062-e543424f-66ca-4f72-8632-82fb5c8abe70.png)
-
-**Install di Linux**
-![instalpackagemanagerlinux](https://user-images.githubusercontent.com/82355684/223921245-3250ab0a-7faf-4fde-9fba-86a5bf2ebcf0.png)
-
-
-## Command NPM
+#### Command NPM
 * mengecek versi NPM
 ```npm -v```
 * memulai project
@@ -45,7 +28,11 @@ composer adalah tools dependency manager untuk project php yang berfungsi sebaga
 * mengupdate npm ke versi terbaru
 ```npm install npm@latest -g```
 
-## Command YARN
+### 3. YARN (Yet Another Resource Negosiator)
+
+Kegunaannya sama dengan npm yaitu sebagia alternatif package manager selain npm untuk Nodejs. Tujuan awal dikembangkannya Yarn adalah untuk mengatasi masalah yang ada pada npm. Seiring perkembangannya, fitur yang dimiliki kedua package manager ini semakin serupa, namun Yarn tetap menjadi pilihan beberapa pengguna JavaScript
+
+#### Command YARN
 * ```yarn init project_name``` untuk membuat inisialisasi dan membuat dua file konfigurasi yaitu package.json dan yarn.lock
 * ```yarn add [package]@[version]``` untuk menentukan versi tertentu untuk setiap package atau library sebagai dependensi bagi proyek
 * ```yarn upgrade [package]@[version]``` untuk menentukan versi mana yang akan digunakan untuk mengupdate package
@@ -63,16 +50,25 @@ composer adalah tools dependency manager untuk project php yang berfungsi sebaga
 * Pada komputer Unix menggunakan cURL:
 ```curl --compressed -o- -L https://yarnpkg.com/install.sh | bash```
 
-**Command Yarn**
+### 3. NVM (Node Version Manager)
 
-* yarn add: menambahkan paket untuk digunakan dalam paket  saat ini.
-* yarn init: menginisialisasi pengembangan sebuah paket.
-* yarn install: menginstal semua dependensi yang didefinisikan dalam berkas package.json.
-* yarn publish: mempublikasikan sebuah paket ke packet manager.
-* yarn remove: menghapus paket yang tidak terpakai dari paket saat ini.
+NVM adalah sebuah program yang akan membantu kita menggunakan lebih dari satu versi Nodejs di dalam satu komputer. NVM lebih mudah digunakan karena selain untuk menentukan versi Nodejs yang akan digunakan, NVM juga akan membantu kita menginstalnya dan tentunya terupdate dengan versi resmi yang dari website Nodejs.
+Kita butuh NVM saat kita membutuhkan Nodejs versi tertentu.
+
+### 4. Composer
+
+composer adalah tools dependency manager untuk project php yang berfungsi sebagai penghubung antara project PHP dengan library dari luar yaitu dengan mengunduh libarary dari packagist.org
+
+**Install di windows**
+
+![install](https://user-images.githubusercontent.com/82355684/221145062-e543424f-66ca-4f72-8632-82fb5c8abe70.png)
+
+**Install di Linux**
+
+![instalpackagemanagerlinux](https://user-images.githubusercontent.com/82355684/223921245-3250ab0a-7faf-4fde-9fba-86a5bf2ebcf0.png)
 
 
-# Cara menjalankan project berbagai bahasa pemrograman di Windows
+# Run project di Windows
 
 ### 1. Reactjs
 
@@ -82,6 +78,7 @@ sebelum menjalankan project react pastikan di lokal sudah terinstal nodejs dan n
   1. buka project reactjs dan masuk ke terminal
   2. jalankan perintah *npm install* untuk menginstal package managernya
   3. jalankan perintah *npm start* untuk running project
+
   ![run reactjs](https://user-images.githubusercontent.com/82355684/221145809-17fec268-bbc1-4414-a225-9f8a93a4e4a9.png)
 
 ### 2. Laravel
@@ -101,7 +98,6 @@ sebelum menjalankan project, pastikan laptop sudah menginstal composer dan php. 
   
   ![run laravel2](https://user-images.githubusercontent.com/82355684/221145540-4e0085f8-86c8-4402-8daf-2c1d7efb6d27.png)
  
-
   **.env sesudah dirubah**
   
   ![run laravel3](https://user-images.githubusercontent.com/82355684/221145568-07296297-1557-4d17-87c8-796dbc61bd53.png)
@@ -148,17 +144,19 @@ ex: go mod init nama_modul
 
 # Cara menjalankan project berbagai bahasa pemrograman di Linux
 
-1. React js
+### 1. React js
 
 * buka project
 * ```npm install```
 * ```npm start```
+
 ![reactjslinux](https://user-images.githubusercontent.com/82355684/223924965-660adbe4-ca66-4961-aa56-ef47df02b0d0.png)
+
 
 * ```npm run build``` digunakan untuk  membuat production build
 
 
-2. Laravel
+### 2. Laravel
 
 
 * jalankan perintah *cp .env.example .env* untuk mengcopy file .env sementara untuk membuat database baru di lokal
@@ -206,7 +204,7 @@ sebelum mengenal git lebih jauh ada perintah yang fungsinya berbeda yaitu git re
 4. lakukan git remote ex: git remote add [nama branch] [url repo] ==> ```git remote add master https://github.com/akun/repo.git```
 5. lakukan git pull ex: git pull [URL repo] ==> ```git pull https://github.com/akun/repo.git```
 
-**git clone digunakan untuk mengupdate apa yang telah di update d repository akan terupdate juga di lokal**
+**git clone berfungsi untuk mengupdate apa yang telah di update d repository akan terupdate juga di lokal**
 ```git clone https://github.com/nama-akun/repo.git```
 
 #### cara menghubungkan git lokal dengan github
@@ -224,12 +222,14 @@ sebelum di push, ```git add .``` dan ```git commit -m "add komentar"```
 1. ```git log --oneline``` untuk melihat list commit yang sudah di rubah
 2. ```git revert [kodeperubahan]``` 
 
-#### git ssh
+#### ssh
 SSH memudahkan user untuk mengelola server tanpa harus datang ke lokasi fisik server. Tidak hanya server saja, user dapat memanfaatkan SSH untuk mengatur dan mengelola komputer maupun perangkat desktop yang ada di jaringan yang sama tanpa harus menyentuh perangkat tersebut.
 SSH memungkinkan user lain dapat mengakses repo yang ada di github jika bersifat private dan telah mendapat izin dari pemilik repo tsb.
 
-**cara mengoneksikan ssh di lokal**
+**cara menggunakan ssh**
 1. masuk ke folder baru
 2. ```git init```
 3. ```git pull git@github.com:enofitriyanti11/MeteorDevopsLearn.git```
 
+
+![image](https://user-images.githubusercontent.com/82355684/230802377-4b9eaa85-22d2-4d0d-a06b-33fa0877587c.png)
