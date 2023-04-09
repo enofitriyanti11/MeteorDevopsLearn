@@ -109,23 +109,23 @@ Dengan mengadopsi DevOps, perusahaan dapat meningkatkan efisiensi, mempercepat w
 DevOps Lifecycle
 
 1. CONTINUOUS DEVELOPMENT
-Tools: Git, SVN, Mercurial, CV
+Tools: Git, SVN, Mercurial, CV.
 Fase yang melibatkan plan dan code dari software. Menentukan visi proyek selama fase perencanaan dan pengembangan mulai dari mengembangkan kode untuk aplikasi.
 
 2. CONTINUOUS INTEGRATION
-Tools: Jenkins, TeamCity, Travis
-tahap ini inti dari siklus hidup DevOps, karena ini adalah praktik yang dilakukan  oleh para pengembang yang melakukan perubahan pada kode sumber dengan lebih sering. Hal ini dilakukan setiap hari ataupun mingguan.
+Tools: Jenkins, TeamCity, Travis.
+Tahap ini inti dari siklus hidup DevOps, karena ini adalah praktik yang dilakukan  oleh para pengembang yang melakukan perubahan pada kode sumber dengan lebih sering. Hal ini dilakukan setiap hari ataupun mingguan.
 
 3. CONTINUOUS TESTING
-Tools: Jenkins, Selenium TestNG, JUnit
-fase ini dilakukan pengujian terhadap software yang dikembangkan secara terus menerus untuk mencari bug menggunakan alat pengujian otomatisasi.
+Tools: Jenkins, Selenium TestNG, JUnit.
+Fase ini dilakukan pengujian terhadap software yang dikembangkan secara terus menerus untuk mencari bug menggunakan alat pengujian otomatisasi.
 
 4. CONTINUOUS DEPLOYMENT
-Conﬁguration Management Tools – Chef, Puppet, Ansible
-Containerization Tools – Docker, Vagrant
-tahap ini mendeploy code pada server produksi. pastikan untuk mendeploy code dengan benar di semua server. Tools2 tersebut untuk membantu dalam mencapai Penerapan Berkelanjutan (Continuous Deployment/CD)
+Conﬁguration Management Tools – Chef, Puppet, Ansible.
+Containerization Tools – Docker, Vagrant.
+Tahap ini mendeploy code pada server produksi. pastikan untuk mendeploy code dengan benar di semua server. Tools2 tersebut untuk membantu dalam mencapai Penerapan Berkelanjutan (Continuous Deployment/CD)
 
 
 5. CONTINUOUS MONITORING
-Tools: Splunk, ELK Stack, Nagios, New Relic
+Tools: Splunk, ELK Stack, Nagios, New Relic.
 Tahap ini penting dalam lifecycle DevOps dalam memantau kinerja aplikasi. semua informasi penting tentang penggunaan software akan dicatat. Kemudian informasi tersebut digunakan untuk memerikasa fungsionalitas aplikasi yang tepat. DevOps dapat menyelesaikan kesalahan seperti low memory, server not reachable, dll.
