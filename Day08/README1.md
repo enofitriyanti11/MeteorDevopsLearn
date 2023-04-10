@@ -107,6 +107,3 @@ Berikut adalah contoh bagaimana cara pull image postgres from registry (docker h
 --> mengakses postgres yang ada di dalam container
 
 ![Screenshot from 2023-04-03 16-07-57](https://user-images.githubusercontent.com/82355684/230804700-e272814e-0ad3-4249-8fe1-37db92510d10.png)
-
-
-![Screenshot from 2023-04-03 16-04-52](https://user-images.githubusercontent.com/82355684/229469135-dab62572-eb6c-4aea-919c-f085e2f99174.png)
