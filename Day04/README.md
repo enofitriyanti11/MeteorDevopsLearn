@@ -237,6 +237,8 @@ digunakan untuk memotong ata mengekstrak bagian teks dari baris atau file.
 
 ## 8. What happens behind the scenes when you access to a website
 
+![image](https://user-images.githubusercontent.com/82355684/230803813-513dfcb2-720a-43dc-9f98-0720eb89b1a6.png)
+
 ![WebServerInformation](https://user-images.githubusercontent.com/82355684/222687517-a058ca10-2318-4044-96b2-e847297cbc7c.png)
 
 Berdasarkan gambar kita dapat melihat bahwa untuk mengakses sebuah informasi di browser itu memerlukan internet. Bagaimana cara kerjanya?
@@ -245,5 +247,5 @@ Berdasarkan gambar kita dapat melihat bahwa untuk mengakses sebuah informasi di 
 2. IP Adress yang dimiliki client itu masih Local Network, sehingga belum bisa mengakses informasi yang ada di server.
 3. Agar bisa terhubung, IP Adress akan terkoneksi ke Provider yang merupakan jalan untuk bisa terhubung ke internet (Public Network), sehingga IP Adress yang dimiliki oleh client akan terhubung terlebih dahulu ke router, dan dari router terhubung ke provider yang digunakan. Contoh provider: Telkomsel, Indihome, Indosaat, dll.
 4. Ketika mencari sebuah informasi di web browser (request), kita akan mengetikkan nama domain. Karena server hanya mengenali IP Adress, maka domain tadi akan ditranslate oleh DNS menjadi sebuah IP Adress yang dikenali oleh Server. Sehingga ketika domain diketikkan, DNS akan memberikan IP Adress dari nama domain tersebut.
-5. Server akan memberikan response berupa data dengan format HTML (tampilan teks&paragraf), CSS(style), dan JavaScript (interaksi dan aksi), JSON (format yang digunakan dalam proses pengiriman dan penyimpanan data file), API (untuk mengintegrasikan dua bagian dari aplikasi atau dengan aplikasi yang berbeda secara bersamaan contohnya integrasi dengan payment gateway). 
+5. Server akan memberikan response berupa data dengan format HTML (tampilan teks&paragraf), CSS(style), dan JavaScript (interaksi dan aksi), JSON (format yang digunakan dalam proses pengiriman dan penyimpanan data file), API (untuk mengintegrasikan dua bagian dari aplikasi atau dengan aplikasi yang berbeda secara bersamaan contohnya integrasi dengan payment gateway). Web Server  adalah sebuah program yang menyajikan halaman web kepada pengguna sebagai tanggapan atas permintaan mereka, yang diteruskan oleh klien HTTP komputer (Browser).
 6. Response tersebut akan dikirim lagi ke client berupa format html yang dikirim melalui IP Adress lagi.
