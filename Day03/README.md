@@ -142,3 +142,25 @@ digunakan untuk memotong ata mengekstrak bagian teks dari baris atau file.
 18. ```rmdir namadirektori``` untuk menghapus direktori.
 
 ![commandline](https://user-images.githubusercontent.com/82355684/221823256-74c93a5a-bb30-4d87-8ede-db89a6a4b795.png)
+
+# Command Linux
+
+![image](https://user-images.githubusercontent.com/82355684/230802941-e10c6ab6-3b44-47b5-aa3f-a656152502d8.png)
+
+![image](https://user-images.githubusercontent.com/82355684/230802976-89debc1a-f9b8-4417-8c1a-c0f18bc71d9d.png)
+
+![image](https://user-images.githubusercontent.com/82355684/230802993-5cfa262e-b010-4b79-8838-0a7ec82e2874.png)
+
+![image](https://user-images.githubusercontent.com/82355684/230803009-def7d5d1-c0b7-4aeb-920d-7fca6f85c0c3.png)
+
+![image](https://user-images.githubusercontent.com/82355684/230803026-c9e8296c-8564-478c-9b6e-f26cc026d47f.png)
+
+![image](https://user-images.githubusercontent.com/82355684/230803060-7fba76da-1d36-4f4d-a68c-4534da4484b7.png)
+
+![image](https://user-images.githubusercontent.com/82355684/230803070-b352f012-d4a7-4fb7-8c54-3688f3316f6c.png)
+
+![image](https://user-images.githubusercontent.com/82355684/230803104-75d5acb7-0139-48c0-9f41-627c9553eaa6.png)
+
+![image](https://user-images.githubusercontent.com/82355684/230803118-00cf4e00-0c7a-4354-9c4f-da704bfed666.png)
+
+![image](https://user-images.githubusercontent.com/82355684/230803122-57521694-a22b-47fa-98e3-2ccb7d670d13.png)
